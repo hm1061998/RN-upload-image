@@ -367,7 +367,7 @@ UploadImage.propTypes = {
   configUrl: PropTypes.string,
   values: PropTypes.array,
   onChange: PropTypes.func,
-  convertLinkImg: PropTypes.convertLinkImg,
+  convertLinkImg: PropTypes.func,
   maxLength: PropTypes.number,
   mediaType: PropTypes.oneOf(["all", "image", "video"]),
   isCheckSelected: PropTypes.bool,
