@@ -9,7 +9,7 @@ import Icon from "./components/Icon";
 import FastImage from "react-native-fast-image";
 import ImageViewer from "./components/ImageViewer";
 
-const Index = ({ data, onDelete, disabled }) => {
+const Index = ({ data, onDelete, disabled, convertLinkImg }) => {
   const imgViewerRef = useRef();
   const renderImage = useMemo(() => {
     return (
