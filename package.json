@@ -1,0 +1,29 @@
+{
+  "name": "rn-upload-image",
+  "version": "1.0.0",
+  "description": "rn-upload-image",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hm1061998/RN-upload-image"
+  },
+  "keywords": [
+    "react-native",
+    "form",
+    "hook-form"
+  ],
+  "author": "ka mờ",
+  "license": "ISC",
+  "dependencies": {
+    "@baronha/react-native-multiple-image-picker": "^0.4.13",
+    "react-native-image-zoom-viewer": "^3.0.1"
+  },
+  "peerDependencies": {
+    "lodash": "*",
+    "prop-types": ">=15.5.0",
+    "react": ">=16.8.0",
+    "react-native": ">=0.62.0",
+    "@expo/vector-icons": "*",
+    "react-native-fast-image": ">=8.5.11"
+  }
+}
