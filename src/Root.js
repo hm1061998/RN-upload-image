@@ -115,7 +115,7 @@ const UploadImage = forwardRef(
           }
 
           let listImg = await Promise.all(
-            rec.map(async (item) => {
+            rec.map(async (item, _index) => {
               // let uriImage = await new Promise(resolve => {
               //   const check = item.path?.match(/:/);
               //   let uri = item.path;
@@ -143,7 +143,7 @@ const UploadImage = forwardRef(
               }
 
               const newItem = {
-                id: `${new Date().getTime()}`,
+                id: `${new Date().getTime() + _index}`,
                 localIdentifier: item.localIdentifier,
                 status: autoUpload ? "uploading" : "waiting",
                 path: uriImage,
