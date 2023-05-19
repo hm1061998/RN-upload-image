@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useRef } from "react";
 import {
   View,
   TouchableOpacity,
@@ -11,6 +11,7 @@ import Icon from "../Icon";
 // import Lightbox from 'react-native-lightbox-v2';
 
 const Index = ({ data, onDelete, sizeImage, convertLinkImg, disabled }) => {
+  const imgViewerRef = useRef();
   const renderImage = useMemo(() => {
     return (
       <TouchableOpacity
