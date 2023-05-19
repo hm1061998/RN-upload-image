@@ -14,8 +14,9 @@ const Index = ({ data, onDelete, sizeImage, convertLinkImg, disabled }) => {
   const renderImage = useMemo(() => {
     return (
       <TouchableOpacity
+        disabled={!data || disabled}
         onPress={() => {
-          imgViewerRef.current.show([{ uri: data?.path || data.uri }]);
+          imgViewerRef.current.show([{ uri: data?.path || data?.uri }]);
         }}
       >
         <FastImage
@@ -26,7 +27,7 @@ const Index = ({ data, onDelete, sizeImage, convertLinkImg, disabled }) => {
         />
       </TouchableOpacity>
     );
-  }, [data?.path, data?.uri, sizeImage]);
+  }, [data, sizeImage, disabled]);
   // console.log('render', getLinkImg(data?.path));
   return (
     <View style={[styles.boxImage, { width: sizeImage, height: sizeImage }]}>

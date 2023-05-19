@@ -24,6 +24,7 @@ const SingeUpload = ({
   sizeImage,
   icon,
   shape,
+  convertLinkImg,
 }) => {
   const [dataImage, setDataImage] = useState(value);
 
@@ -144,6 +145,7 @@ const SingeUpload = ({
           <UploadImageItem
             data={dataImage}
             sizeImage={sizeImage}
+            convertLinkImg={convertLinkImg}
             onDelete={() => {
               setDataImage(null);
               onChange?.(null);
@@ -183,7 +185,7 @@ const SingeUpload = ({
       </>
     ),
 
-    [dataImage, sizeImage, shape, icon, onChange, openPicker]
+    [dataImage, sizeImage, shape, icon, onChange, openPicker, convertLinkImg]
   );
 
   return renderData;
@@ -214,6 +216,7 @@ SingeUpload.propTypes = {
   mediaType: PropTypes.oneOf(["all", "image", "video"]),
   isCheckSelected: PropTypes.bool,
   sizeImage: PropTypes.number,
+  convertLinkImg: PropTypes.func,
 };
 
 const RootElement = (props, ref) => {
