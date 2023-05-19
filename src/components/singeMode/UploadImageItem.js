@@ -1,5 +1,10 @@
 import React, { useMemo } from "react";
-import { View, TouchableOpacity, ActivityIndicator } from "react-native";
+import {
+  View,
+  TouchableOpacity,
+  ActivityIndicator,
+  StyleSheet,
+} from "react-native";
 import FastImage from "react-native-fast-image";
 import ImageViewer from "../ImageViewer";
 import Icon from "../Icon";
