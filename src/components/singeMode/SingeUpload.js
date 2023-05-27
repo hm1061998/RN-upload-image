@@ -11,7 +11,7 @@ import PropTypes from "prop-types";
 import uuid from "react-native-uuid";
 import Icon from "../Icon";
 // import * as ImageManipulator from 'expo-image-manipulator';
-import * as MultipleImagePicker from "@baronha/react-native-multiple-image-picker";
+import MultipleImagePicker from "@baronha/react-native-multiple-image-picker";
 
 const SingeUpload = ({
   configOption,

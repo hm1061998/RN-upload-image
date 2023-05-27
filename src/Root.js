@@ -17,7 +17,7 @@ import {
 import PropTypes from "prop-types";
 import Icon from "./components/Icon";
 // import * as ImageManipulator from 'expo-image-manipulator';
-import * as MultipleImagePicker from "@baronha/react-native-multiple-image-picker";
+import MultipleImagePicker from "@baronha/react-native-multiple-image-picker";
 import _ from "lodash";
 
 // const MAX_RESIZE_IMAGES = 640;
